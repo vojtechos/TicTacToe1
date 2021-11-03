@@ -34,14 +34,14 @@ public class Main {
                 return;
             }
             if (round == 9) {
-                System.out.println("remiza");
+                System.out.println("Draw");
                 return;
             }
         }
     }
 
     public static void userInput() {
-        System.out.print("Hraje hráč " + (round % 2 == 0 ? "O: " : "X: "));
+        System.out.print("Player: " + (round % 2 == 0 ? "O: " : "X: "));
         int position = sc.nextInt();
         if (!Character.isDigit(board[position])) {
             System.out.println("Invalid Input");
@@ -65,11 +65,11 @@ public class Main {
                 }
             }
             if (X == 3) {
-                System.out.println("vyhral X!");
+                System.out.println("X player wins!");
                 return 'X';
             }
             if (O == 3) {
-                System.out.println("vyhral O!");
+                System.out.println("O player wins!");
                 return 'O';
             }
         }
