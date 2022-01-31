@@ -1,2 +1,2 @@
 # tictactoe
-Piškvorky
+Piškvorky s Honzíkem Tillem
